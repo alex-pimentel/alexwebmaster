@@ -1,0 +1,55 @@
+{
+  "company": "Notion",
+  "role": "Team Lead & Full Stack Developer",
+  "period": "Feb 2019 - Oct 2020",
+  "location": "Rio de Janeiro, Brazil",
+  "link": "#",
+  "desc": "Technical leadership for clients, translating business needs into scalable solutions. Designed robust pipelines across AWS and Azure. Delivered customized WordPress ecosystems.",
+  "techs": ["PHP", "CodeIgniter", "MySQL", "Node.js", "Java", "AWS", "Azure", "TypeScript", "Angular", "WordPress", "Docker"],
+  "projects": [
+    {
+      "id": "client-solutions-platform",
+      "title": "Client Solutions Platform",
+      "description": "Served as technical lead and bridge between clients and development teams at Notion, translating complex business needs into scalable solutions. I developed high-performance interfaces with Angular, customized WordPress ecosystems, and backend services with Node.js, Java, and PHP. Managed end-to-end deliveries from technical conception to production deployment, coordinating sprints and ensuring quality through rigorous code reviews.",
+      "image": "client-solutions-platform.png",
+      "prompt": "Enterprise solutions platform with multiple clients, project management dashboard, icons representing Angular, Node.js, Java, WordPress, AWS and Azure, solution architecture diagrams, team collaborating in sprints, clean corporate design with purple (Notion color) and white tones, modern interface with project cards, 4k",
+      "challenges": [
+        "Clients with ambiguous business visions requiring constant translation and refinement work",
+        "Simultaneous projects on radically different technologies \u2014 Angular, WordPress, Node.js, Java \u2014 requiring constant context switching",
+        "Aggressive deadlines with poorly defined scope \u2014 clients expected fast deliveries without clear specifications",
+        "Integration with client legacy systems, many without documentation and with inconsistent data schemas",
+        "Distributed teams with asynchronous communication \u2014 alignment and code review challenges"
+      ],
+      "solutions": [
+        "Established weekly technical refinement sessions with each client, transforming business needs into technical stories with clear acceptance criteria",
+        "Created reusable architecture blueprints for common patterns (authentication, payments, notifications) that accelerated new projects",
+        "Implemented custom CI/CD pipelines per project on AWS and Azure, automating builds and deployments",
+        "Adopted mandatory code reviews with standardized checklists, reducing post-release defects",
+        "Documented Architecture Decision Records (ADRs) for each project, creating institutional memory"
+      ],
+      "tradeoffs": [
+        {
+          "title": "Speed vs. Documentation",
+          "body": "Clients prioritized speed; the balance was to document decisions (ADRs) but not detailed specifications \u2014 lean and pragmatic documentation"
+        },
+        {
+          "title": "Custom WordPress vs. Headless",
+          "body": "For projects requiring easy client editing, traditional WordPress; for performance and flexibility, headless WordPress with Angular frontend"
+        },
+        {
+          "title": "AWS vs. Azure",
+          "body": "Choice guided by the client\u2019s existing ecosystem and team expertise, with a strategy to avoid vendor lock-in using Terraform"
+        }
+      ],
+      "results": [
+        "40% reduction in post-release defects through systematic code reviews",
+        "Consistent on-time delivery for 90% of projects under my leadership",
+        "Client satisfaction above 85% (NPS) \u2014 multiple clients returned for new projects",
+        "Architecture blueprints reused across 6+ projects, reducing setup time by 60%",
+        "Development team more aligned and productive with well-planned sprints and actionable retrospectives"
+      ],
+      "period": "February 2019 - October 2020",
+      "duration": "21 months"
+    }
+  ]
+}

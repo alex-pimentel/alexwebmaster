@@ -1,0 +1,189 @@
+{
+  "company": "Eletromidia",
+  "role": "Senior Full Stack Developer",
+  "period": "July 2022 - Present",
+  "location": "Remote, Brazil",
+  "link": "https://eletromidia.com.br",
+  "desc": "Architected scalable cloud solutions on GCP, implemented IaC (Terraform), led AI-driven content platform contributing to 10x sales growth, reduced costs by 45%, and led Vue.js adoption roadmap.",
+  "techs": ["React", "Node.js", "MongoDB", "Electron", "Vue.js", "GCP", "Terraform", "CI/CD", "PHP", "Laravel", "Python", "Kafka", "Redis", "TypeScript", "Next.js", "Angular", "Clean Code", "Docker", "Kubernetes", "Datadog", "Grafana", "Astro", "Tailwind", "Nuxt", "Pinia", "Redux", "Express", "BigQuery", "Linux", "Symfony", "Memcached", "Tauri", "New Relic", "Vite", "Microservices", "Event-Driven"],
+  "projects": [
+    {
+      "id": "cicd-automation-standardization",
+      "title": "CI/CD Automation & Standardization",
+      "description": "Led the CI/CD automation initiative by convincing the DevOps team to adopt templates and standardized pipelines using GitHub Workflows and Terraform to deploy to GCP. Transformed the deployment process from 10 days to under 1 hour for new projects by implementing reusable workflows that enforced high-quality standards including unit tests, end-to-end tests, static analysis, dependency checking, and comprehensive security scanning.",
+      "image": "cicd-automation-standardization.png",
+      "prompt": "Modern CI/CD pipeline visualization, GitHub Actions workflow diagram with automated stages for unit tests, end-to-end tests, static analysis, dependency checking, Trivy security scanning, Docker image scanning, vulnerability scanning, Terraform deployment to GCP, clean DevOps infrastructure dashboard, blue-green deployment scheme, glowing connections between stages, futuristic datacenter background, 4k",
+      "challenges": [
+        "Convincing experienced DevOps engineers to abandon ad-hoc manual processes in favor of standardized templates",
+        "Heterogeneous tech stack across 20+ projects \u2014 each with its own build, test, and deployment idiosyncrasies",
+        "Security team was not involved early, requiring retroactive compliance validation for Trivy and vulnerability scans",
+        "Resistance from developers who feared losing autonomy over pipeline configuration",
+        "Lack of monitoring for pipeline health \u2014 no visibility into failure rates, duration trends, or flaky tests"
+      ],
+      "solutions": [
+        "Presented a phased adoption plan starting with 3 pilot projects to demonstrate ROI before company-wide rollout",
+        "Designed GitHub reusable workflows with parameterized inputs, allowing project-level customization within a standardized scaffold",
+        "Integrated Trivy for filesystem scan, Docker image scan, and vulnerability scanning as mandatory gates in every pipeline",
+        "Added dependency auditing (npm audit, pip-audit) and static analysis (SonarQube, ESLint) as parallel pre-merge checks",
+        "Built a centralized Terraform module registry on GCP with versioned infrastructure components shared across all projects"
+      ],
+      "tradeoffs": [
+        {
+          "title": "GitHub Actions vs. Cloud Build",
+          "body": "We chose GitHub Actions as the orchestrator for tighter developer workflow integration and community marketplace, despite Cloud Build offering deeper GCP-native integration"
+        },
+        {
+          "title": "Reusable workflows vs. Custom pipelines",
+          "body": "Standardization reduced pipeline maintenance by 70% but required a strict upgrade process when templates changed, causing short-term migration friction"
+        },
+        {
+          "title": "Security gates vs. Developer velocity",
+          "body": "Mandatory Trivy and dependency scans added 8-12 minutes per pipeline run; we mitigated by caching scan results and allowing bypass with security team approval"
+        }
+      ],
+      "results": [
+        "Reduced new project deployment setup from 10 days to under 1 hour using standardized templates",
+        "Deployment frequency increased from biweekly to multiple times per day across 20+ projects",
+        "Zero critical vulnerabilities in production since CI/CD security gates were enforced",
+        "70% reduction in pipeline maintenance overhead through reusable workflow centralization",
+        "100% of projects adopted the standardized pipeline within 6 months",
+        "Achieved SOC 2 compliance readiness for CI/CD processes without additional audit effort"
+      ],
+      "period": "January 2024 - Present",
+      "duration": "Ongoing with progressive rollouts"
+    },
+    {
+      "id": "ai-content-creation-platform",
+      "title": "AI Content Creation Platform",
+      "description": "AI-powered platform for large-scale automated advertising content creation. It used LLM pipelines (OpenAI, Anthropic, Gemini) orchestrated with LangGraph to generate scripts, storyboards, and media assets for OOH (Out-of-Home) advertising campaigns. The platform allowed creators and advertisers to generate complete campaigns in minutes, reducing production time from weeks to hours.",
+      "image": "ai-content-creation-platform.png",
+      "prompt": "Futuristic dashboard of an AI content creation platform, modern interface with dark and blue tones, showing script generation panels, OOH campaign previews on urban digital billboards, real-time performance charts, neural network elements in the background, sophisticated UI/UX design, subtle neon lighting, 4k",
+      "challenges": [
+        "Integrating multiple LLM providers (OpenAI, Anthropic, Gemini) with automatic fallback and output consistency",
+        "Ensuring acceptable latency for generating complete campaigns across multiple processing stages",
+        "Designing a persistent memory and context system to maintain coherence across different assets generated for the same campaign",
+        "Synchronizing complex state between React/Next.js frontend and the event-driven backend",
+        "Scaling the system for hundreds of concurrent users generating content simultaneously"
+      ],
+      "solutions": [
+        "Implemented agent orchestration with LangGraph, where each creation stage (briefing, script, storyboard, review) was a graph node with specialized agents",
+        "Used Kafka queues to decouple heavy asset generation (images, videos) from the main response flow",
+        "Adopted Cloud Run and Cloud Functions on GCP for asynchronous processing, auto-scaling on demand",
+        "Built an intelligent cache system with Redis for partial LLM results, reducing costs and latency by 40%",
+        "Applied RAG with vector database (Supabase/pgvector) to retrieve past briefings and successful campaigns as context"
+      ],
+      "tradeoffs": [
+        {
+          "title": "Cost vs. Quality",
+          "body": "Cheaper models (Gemini Flash, GPT-4o-mini) reduced costs but required more revision iterations; premium models (GPT-4, Claude 3.5) delivered superior quality with higher latency"
+        },
+        {
+          "title": "Real-time vs. Batch processing",
+          "body": "We chose asynchronous processing with WebSockets for progressive feedback instead of blocking the user until full completion"
+        },
+        {
+          "title": "Flexibility vs. Consistency",
+          "body": "More complex graphs allowed greater creativity but made maintenance harder and increased error rates; we simplified the core graph and created extension plugins"
+        }
+      ],
+      "results": [
+        "Directly contributed to a 10x sales growth for the company over two consecutive years",
+        "Reduced campaign creation time from 2 weeks to 2 hours",
+        "45% reduction in operational and infrastructure costs",
+        "99.9% uptime during seasonal traffic peaks",
+        "Platform adopted by over 500 active advertisers"
+      ],
+      "period": "July 2022 - Present",
+      "duration": "Ongoing project with incremental deliveries"
+    },
+    {
+      "id": "vuejs-adoption-roadmap",
+      "title": "Vue.js Adoption Roadmap",
+      "description": "A 9-month strategic plan to adopt Vue.js as the company\u2019s primary frontend framework, gradually replacing legacy jQuery and AngularJS applications. This included creating a componentized design system in Vue 3 with Composition API, migrating critical modules, training the team, and establishing code standards, testing, and review practices.",
+      "image": "vuejs-adoption-roadmap.png",
+      "prompt": "Visual technology adoption roadmap, 9-month timeline with colorful milestones representing Vue.js, Pinia, Nuxt, componentized design system, development team in pair programming session, clean code on monitors, chart showing evolution of performance and quality metrics, modern tech-corporate style, green and blue tones",
+      "challenges": [
+        "Team of 12 frontend developers with varying experience levels \u2014 some with decades of jQuery, others fresh graduates",
+        "Critical AngularJS applications that could not stop during migration \u2014 no full rewrite window",
+        "Lack of a unified design system \u2014 each application had its own visual and behavioral implementation",
+        "Natural resistance to change \u2014 developers comfortable with old technologies were wary of the new framework",
+        "Need to maintain feature delivery speed during the learning and migration period"
+      ],
+      "solutions": [
+        "Structured the roadmap into 4 phases: (1) Foundations and Design System, (2) Pilot with low-risk project, (3) Migration of critical applications, (4) Standardization and legacy decommissioning",
+        "Created a design system in Vue 3 with Pinia for global component state, documented in Storybook",
+        "Implemented a mentorship program with weekly pair programming sessions and coding dojos",
+        "Mandated automated testing (vitest, cypress) as a requirement from the first PR in the new stack",
+        "Adopted Nuxt 3 for SSR and better SEO in public-facing applications"
+      ],
+      "tradeoffs": [
+        {
+          "title": "Vue 3 Options vs. Composition API",
+          "body": "We chose Composition API from the start \u2014 steeper learning curve but more scalable for complex components and logic reuse"
+        },
+        {
+          "title": "Pinia vs. Vuex",
+          "body": "We chose Pinia as the official Vue 3 recommendation, with better TypeScript integration and simpler API, despite a smaller plugin ecosystem"
+        },
+        {
+          "title": "Monorepo vs. Multiple repositories",
+          "body": "We chose a monorepo (Turborepo) to share the design system and common libraries, accepting slower builds in exchange for consistency"
+        }
+      ],
+      "results": [
+        "33% increase in frontend feature delivery speed",
+        "20% reduction in visual regressions and production bugs",
+        "92% test coverage on new components vs. 15% on legacy code",
+        "Zero critical incidents during the migration period",
+        "Frontend team unified under a single stack, eliminating knowledge silos",
+        "Design system adopted by 3 squads, with over 70% component reuse"
+      ],
+      "period": "March 2024 - November 2024",
+      "duration": "9 months"
+    },
+    {
+      "id": "legacy-modernization-gcp",
+      "title": "Legacy Systems Modernization to GCP",
+      "description": "Migration and modernization of legacy monolithic systems to an event-driven cloud architecture on GCP. The project involved a complete restructuring of OOH media delivery platforms, replacing on-premise infrastructure with Google Cloud managed services, resulting in greater resilience, scalability, and significant operational cost reduction.",
+      "image": "legacy-modernization-gcp.png",
+      "prompt": "Complex cloud architecture on Google Cloud Platform, modern infrastructure diagram with Cloud Run, Pub/Sub, Cloud Functions, BigQuery, Terraform, technology-blue design, luminous connections between services, visual representation of legacy to cloud-native migration, subtle cyberpunk style, 4k",
+      "challenges": [
+        "15+ year old legacy monolithic system with tight coupling and accumulated technical debt",
+        "Zero-downtime migration \u2014 24/7 operation with real-time media delivery",
+        "Distributed team with limited cloud-native and IaC knowledge",
+        "Deep integrations with third-party systems (media suppliers, data partners) lacking proper documentation",
+        "Sensitive advertiser data requiring LGPD compliance during and after migration"
+      ],
+      "solutions": [
+        "Split the migration into 6 phases, each corresponding to a business domain (delivery, billing, reporting, authentication, catalog, integrations)",
+        "Adopted strangler pattern \u2014 features gradually migrated with intelligent routing between legacy and new systems",
+        "Implemented IaC with Terraform for complete infrastructure provisioning, versioned and reviewed via GitOps",
+        "Standardized CI/CD with Cloud Build and GitHub Actions, reducing deployment friction by 80%",
+        "Designed comprehensive monitoring with Datadog and Grafana for full observability during and after migration"
+      ],
+      "tradeoffs": [
+        {
+          "title": "Big Bang vs. Gradual Migration",
+          "body": "We chose gradual migration (strangler) \u2014 safer but with a prolonged period of maintaining two parallel systems"
+        },
+        {
+          "title": "Re-architecture vs. Lift-and-shift",
+          "body": "We chose to re-architect critical components for event-driven, accepting higher initial investment in exchange for future scalability"
+        },
+        {
+          "title": "Dual-run cost",
+          "body": "Running legacy and new infrastructure simultaneously for 8 months increased temporary costs by 35%"
+        }
+      ],
+      "results": [
+        "99.9% uptime guaranteed during traffic peaks (vs. 95% on legacy)",
+        "45% reduction in hardware and datacenter operation costs",
+        "80% less deployment friction \u2014 from weekly manual deploys to multiple automated deploys per day",
+        "60% faster incident response time thanks to intelligent alerts and real-time dashboards",
+        "Infrastructure team reduced from 6 to 2 people, reallocated to innovation"
+      ],
+      "period": "January 2023 - December 2023",
+      "duration": "12 months (6 migration phases)"
+    }
+  ]
+}

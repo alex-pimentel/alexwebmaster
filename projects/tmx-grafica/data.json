@@ -1,0 +1,103 @@
+{
+  "company": "TMX Gr\u00e1fica",
+  "role": "Full Programmer & Team Leader",
+  "period": "Oct 2009 - June 2016",
+  "location": "Remote",
+  "link": "#",
+  "desc": "Managed and mentored development team for 5 years. Architected countrywide e-commerce platform and developed advanced PDF verification system.",
+  "techs": ["PHP", "JavaScript", "CodeIgniter", "MySQL", "AWS", "Docker"],
+  "projects": [
+    {
+      "id": "national-graphic-ecommerce",
+      "title": "National Graphic E-commerce Platform",
+      "description": "Architecture and maintenance of a nationwide e-commerce platform for the printing industry, enabling clients across Brazil to order customized print materials (cards, flyers, banners, packaging) through an online configurator. The platform integrated automatic price calculation based on technical specifications (size, paper type, finishing, quantity), an art approval workflow, and production integrated with the factory floor. Developed with CodeIgniter and MySQL, hosted on AWS.",
+      "image": "national-graphic-ecommerce.png",
+      "prompt": "Graphic e-commerce platform with 3D product configurator, client customizing business card online, real-time design preview, production dashboard with order status, industrial printing machines in background, integration diagram between online store and factory floor, vibrant CMYK colors, modern industrial design, 4k",
+      "challenges": [
+        "Extremely complex product configurator \u2014 each print material type had dozens of variables (format, paper, weight, finishing, quantity) affecting price non-linearly",
+        "Real-time price calculation \u2014 over 10k possible combinations per product, requiring a performant pricing engine",
+        "Production integration \u2014 approved orders needed to feed directly into the factory\u2019s production system",
+        "File upload and validation \u2014 receiving print-ready PDFs and technically validating them (resolution, color, bleed, fonts)",
+        "Platform maintenance for 5+ years while the market and technologies evolved",
+        "Team leadership \u2014 mentoring junior developers and coordinating deliveries"
+      ],
+      "solutions": [
+        "Developed PHP pricing engine with an optimized decision tree and caching of frequent results in MySQL",
+        "Implemented automatic PDF validation with PHP libraries to check technical specifications before production submission",
+        "Created production system integration API (graphic ERP), reducing manual intervention by 90%",
+        "Built complete admin panel for order management, production, and management reports",
+        "Led gradual migration to AWS, improving scalability and availability",
+        "Established code review and testing processes that maintained quality despite the system\u2019s constant evolution"
+      ],
+      "tradeoffs": [
+        {
+          "title": "CodeIgniter (monolith) vs. Modernization",
+          "body": "Keeping the monolith was safer for a critical system with 5+ years of operation, but made adopting new technologies harder; modernization was done gradually in peripheral modules"
+        },
+        {
+          "title": "Server-side vs. Client-side pricing",
+          "body": "Server-side calculation ensured consistency and security but added latency; we implemented aggressive caching to keep the experience smooth"
+        },
+        {
+          "title": "Customization vs. Standardized product",
+          "body": "Offering many personalization options was the competitive differentiator, but exponentially increased configurator complexity and order error rates"
+        }
+      ],
+      "results": [
+        "Nationwide operation \u2014 clients in all Brazilian states",
+        "5k+ orders/month processed at peak",
+        "90% reduction in manual intervention between order and production",
+        "System operated for 7+ years with continuous evolution without requiring a rebuild",
+        "3 junior developers mentored who grew to mid-level positions during the period",
+        "Average 20% annual revenue growth for the company following the platform\u2019s evolution"
+      ],
+      "period": "October 2009 - June 2016",
+      "duration": "6 years and 9 months"
+    },
+    {
+      "id": "pdf-verification-system",
+      "title": "Advanced PDF Verification System",
+      "description": "Automated technical verification system for PDF files in graphic production, developed to ensure all client-submitted files met strict printing technical standards before entering production. The system automatically analyzed image resolution, color profile (CMYK/RGB), bleed, embedded fonts, crop marks, and dozens of other parameters, generating detailed approval or rejection reports. The solution dramatically reduced printing errors and factory rework.",
+      "image": "pdf-verification-system.png",
+      "prompt": "PDF verification system for graphic printing, technical interface showing file analysis with highlighted problems \u2014 low resolution, RGB colors, missing bleed, unembedded fonts \u2014 detailed report with approval/rejection status, PDF preview with visual markups, technical UI design with red (error) and green (ok) tones, quality charts, 4k",
+      "challenges": [
+        "Correctly interpreting the PDF standard \u2014 complex specification with multiple variations and versions",
+        "Performance when analyzing large files (up to 500MB) with dozens of pages",
+        "Verification accuracy \u2014 false positives generated unnecessary rework, false negatives caused expensive printing errors",
+        "Keeping the system updated with new file formats and printing requirements that evolved over time",
+        "Concurrent processing of multiple simultaneous uploads without degradation"
+      ],
+      "solutions": [
+        "Used specialized PHP libraries (FPDI, PDFParser) combined with Ghostscript for deep PDF analysis",
+        "Implemented queue-based processing with background jobs for large files, notifying users when analysis was complete",
+        "Created configurable rules engine \u2014 each product type (card, banner, flyer) had its own set of verification rules",
+        "Developed weight and scoring system \u2014 critical issues (incorrect color mode) auto-rejected; minor issues (unembedded fonts) generated warnings",
+        "Incorporated visual problem preview \u2014 the system visually marked on the PDF where each issue was found"
+      ],
+      "tradeoffs": [
+        {
+          "title": "Full automation vs. Human review",
+          "body": "The automated system handled 90% of cases; the remaining 10% with ambiguous results went to manual review by a specialized operator"
+        },
+        {
+          "title": "Strictness vs. Usability",
+          "body": "Very strict rules rejected many files and frustrated clients; more flexible rules increased printing error risk \u2014 we found a balance with criticality categories"
+        },
+        {
+          "title": "Speed vs. Accuracy",
+          "body": "Complete detailed analysis was slower; we optimized for preliminary feedback in seconds and full analysis in the background"
+        }
+      ],
+      "results": [
+        "95% reduction in printing errors from improperly formatted files",
+        "Eliminated rework \u2014 previously the machine operator would discover the error at print time, wasting paper and ink",
+        "Average verification time of 15 seconds for typical files (vs. 5-10 minutes manual)",
+        "Processing of 500+ files/day with no bottlenecks",
+        "Clients received immediate feedback on issues, reducing the approval cycle by 80%",
+        "The system became a competitive differentiator \u2014 few print shops in Brazil offered automated technical verification"
+      ],
+      "period": "January 2011 - June 2016",
+      "duration": "5 years and 6 months (continuous evolution)"
+    }
+  ]
+}

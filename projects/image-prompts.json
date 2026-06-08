@@ -1,62 +1,6 @@
 [
   {
-    "output": "eletromidia/ai-content-creation-platform.png",
-    "prompt": "Futuristic dashboard of an AI content creation platform, modern interface with dark and blue tones, showing script generation panels, OOH campaign previews on urban digital billboards, real-time performance charts, neural network elements in the background, sophisticated UI/UX design, subtle neon lighting, 4k"
-  },
-  {
-    "output": "eletromidia/legacy-modernization-gcp.png",
-    "prompt": "Complex cloud architecture on Google Cloud Platform, modern infrastructure diagram with Cloud Run, Pub/Sub, Cloud Functions, BigQuery, Terraform, technology-blue design, luminous connections between services, visual representation of legacy to cloud-native migration, subtle cyberpunk style, 4k"
-  },
-  {
-    "output": "eletromidia/vuejs-adoption-roadmap.png",
-    "prompt": "Visual technology adoption roadmap, 9-month timeline with colorful milestones representing Vue.js, Pinia, Nuxt, componentized design system, development team in pair programming session, clean code on monitors, chart showing evolution of performance and quality metrics, modern tech-corporate style, green and blue tones"
-  },
-  {
-    "output": "masterminds/multi-agent-collaboration-platform.png",
-    "prompt": "Multi-agent collaboration platform with dark futuristic interface, multiple AI agents represented as colorful luminous spheres connected by data lines, humans interacting via chat with agent avatars, real-time reasoning graphs, neural graph topology in the background, elegant cyberpunk design, sophisticated UI with purple and cyan tones, 4k"
-  },
-  {
-    "output": "masterminds/agent-memory-rag-system.png",
-    "prompt": "Vector memory system with visual representation of embeddings in three-dimensional space, colorful luminous dots representing agent memories, semantic search lines connecting questions to relevant answers, vector database architecture with PostgreSQL, cosine similarity graphs, tech-futuristic design with green and dark blue tones, 4k"
-  },
-  {
-    "output": "sony-music/application-migration-aws.png",
-    "prompt": "Cloud architecture on AWS for the music industry, diagram with EC2, RDS, S3, CloudFront, Lambda, musical note and sound wave design system, data flowing between services, digital distribution dashboard, music catalog in the cloud, modern corporate style with orange and purple tones (Sony Music colors), 4k"
-  },
-  {
-    "output": "sony-music/cicd-pipeline-automation.png",
-    "prompt": "Visual CI/CD pipeline, automated belt with Bitbucket and Jenkins, code flowing through build, test, deploy stages to AWS, test coverage charts, quality indicators, modern flat design with DevOps tool icons, blue and green success tones, luminous arrows and connections, 4k"
-  },
-  {
-    "output": "drmarket/medical-marketplace.png",
-    "prompt": "B2B medical marketplace, professional dashboard with sales charts, hospital equipment and medication catalog, clean professional interface with navy blue and white tones, map of Brazil showing logistics distribution, health and commerce icons, regulatory compliance dashboard, modern corporate UI/UX design, 4k"
-  },
-  {
-    "output": "notion/client-solutions-platform.png",
-    "prompt": "Enterprise solutions platform with multiple clients, project management dashboard, icons representing Angular, Node.js, Java, WordPress, AWS and Azure, solution architecture diagrams, team collaborating in sprints, clean corporate design with purple (Notion color) and white tones, modern interface with project cards, 4k"
-  },
-  {
-    "output": "fireball/ecommerce-platforms.png",
-    "prompt": "Multiple online stores in a central dashboard, e-commerce interface with product catalog, shopping cart, payment gateway, responsive design for desktop and mobile, corporate blue and orange tones, PHP, JavaScript, Node.js, PostgreSQL, MySQL icons in background, data centers and network connections, modern flat style, 4k"
-  },
-  {
-    "output": "fireball/pwa-multi-service-app.png",
-    "prompt": "Progressive Web App running on multiple devices — iPhone, Android smartphone, tablet and notebook — all displaying the same application, modern interface with material design, icons for service workers, cache, push notifications, geolocation and camera, 5G connectivity and offline represented visually, purple-blue gradient, 4k"
-  },
-  {
-    "output": "agente-resolve/custom-ecommerce-solution.png",
-    "prompt": "Custom e-commerce dashboard, online store with clean professional design, administration panel with order, customer and product management, PagSeguro and Correios integrations, Linux servers in background, dark blue and green tones, PHP, MySQL, CodeIgniter icons, responsive design on desktop and mobile, 4k"
-  },
-  {
-    "output": "agente-resolve/electron-desktop-app.png",
-    "prompt": "Modern desktop application running on three operating systems — Windows, macOS and Linux — same interface on all, professional UI/UX design with financial charts, customer tables, KPI dashboard, Electron Framework icon, concept of single codebase for multiple platforms, dark background with blue and purple details, 4k"
-  },
-  {
-    "output": "tmx-grafica/national-graphic-ecommerce.png",
-    "prompt": "Graphic e-commerce platform with 3D product configurator, client customizing business card online, real-time design preview, production dashboard with order status, industrial printing machines in background, integration diagram between online store and factory floor, vibrant CMYK colors, modern industrial design, 4k"
-  },
-  {
-    "output": "tmx-grafica/pdf-verification-system.png",
-    "prompt": "PDF verification system for graphic printing, technical interface showing file analysis with highlighted problems — low resolution, RGB colors, missing bleed, unembedded fonts — detailed report with approval/rejection status, PDF preview with visual markups, technical UI design with red (error) and green (ok) tones, quality charts, 4k"
+    "output": "eletromidia/cicd-automation-standardization.png",
+    "prompt": "Modern CI/CD pipeline visualization, GitHub Actions workflow diagram with automated stages for unit tests, end-to-end tests, static analysis, dependency checking, Trivy security scanning, Docker image scanning, vulnerability scanning, Terraform deployment to GCP, clean DevOps infrastructure dashboard, blue-green deployment scheme, glowing connections between stages, futuristic datacenter background, 4k"
   }
 ]

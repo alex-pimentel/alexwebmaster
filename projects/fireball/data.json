@@ -1,0 +1,99 @@
+{
+  "company": "Fireball Multim\u00eddia",
+  "role": "Full Stack Developer",
+  "period": "Mar 2017 - Feb 2019",
+  "location": "Rio de Janeiro, Brazil",
+  "link": "#",
+  "desc": "Built tailored e-commerce platforms, developed backend systems, administered Linux VPS, managed Azure/AWS services, and developed PWAs/mobile apps.",
+  "techs": ["PHP", "JavaScript", "CodeIgniter", "MySQL", "PostgreSQL", "Node.js", "Java", "AWS", "Azure", "Angular", "WordPress", "Docker", "Linux"],
+  "projects": [
+    {
+      "id": "ecommerce-platforms",
+      "title": "Custom E-commerce Platforms",
+      "description": "Development of tailor-made e-commerce platforms for various segments at Fireball Multim\u00eddia. Projects ranged from complete online stores for small and medium sellers to complex order and catalog management systems. Each platform was built with PHP and JavaScript on the backend, Node.js for real-time services, and relational databases (PostgreSQL or MySQL) according to client needs.",
+      "image": "ecommerce-platforms.png",
+      "prompt": "Multiple online stores in a central dashboard, e-commerce interface with product catalog, shopping cart, payment gateway, responsive design for desktop and mobile, corporate blue and orange tones, PHP, JavaScript, Node.js, PostgreSQL, MySQL icons in background, data centers and network connections, modern flat style, 4k",
+      "challenges": [
+        "Highly diverse client requirements \u2014 each e-commerce had different checkout flows, shipping rules, and payment methods",
+        "Tight deadlines with limited budgets \u2014 typical of small and medium businesses",
+        "Need for integration with multiple payment gateways and shipping carriers",
+        "Performance on product pages and search with catalogs of varying sizes",
+        "Maintaining multiple platforms running simultaneously with a small team"
+      ],
+      "solutions": [
+        "Developed a modular e-commerce base framework in PHP, where common features (cart, checkout, authentication) were reusable components and differences became plugins",
+        "Used Node.js for real-time modules \u2014 order notifications, support chat, delivery tracking",
+        "Implemented Redis caching for catalog and search pages, improving performance by 3x",
+        "Created standardized APIs for integration with gateways (PagSeguro, Mercado Pago) and carriers (Correios, Jadlog)",
+        "Adopted automated deployment with bash scripts and AWS Elastic Beanstalk for consistent infrastructure"
+      ],
+      "tradeoffs": [
+        {
+          "title": "Custom framework vs. Open Source",
+          "body": "I chose a custom framework based on CodeIgniter for full control over architecture and performance, instead of relying on solutions like Magento that were too heavy for the client\u2019s scale"
+        },
+        {
+          "title": "MySQL vs. PostgreSQL",
+          "body": "MySQL for clients with fewer complex relational data needs; PostgreSQL for those requiring advanced analytical queries"
+        },
+        {
+          "title": "Delivery speed vs. Customization",
+          "body": "The base framework reduced setup time by 50%, but clients with very specific requirements needed customizations that broke standardization"
+        }
+      ],
+      "results": [
+        "15+ e-commerce stores delivered in 2 years across different segments",
+        "Average delivery time of 6 weeks per project (vs. 12 weeks estimated with traditional solutions)",
+        "60% reduction in development cost compared to full-service agency solutions",
+        "100% of projects with over 99% uptime on AWS infrastructure",
+        "Multiple clients saw online sales growth exceeding 200% in the first year"
+      ],
+      "period": "March 2017 - February 2019",
+      "duration": "24 months (ongoing projects)"
+    },
+    {
+      "id": "pwa-multi-service-app",
+      "title": "Multi-Service PWA Application",
+      "description": "Development of a multi-service PWA (Progressive Web App) that served as an aggregator platform for multimedia services. The app offered offline-first functionality, push notifications, and integration with native device features (camera, geolocation, motion sensor). The experience was comparable to a native app but with significantly lower development and maintenance costs, running on iOS, Android, and desktop.",
+      "image": "pwa-multi-service-app.png",
+      "prompt": "Progressive Web App running on multiple devices \u2014 iPhone, Android smartphone, tablet and notebook \u2014 all displaying the same application, modern interface with material design, icons for service workers, cache, push notifications, geolocation and camera, 5G connectivity and offline represented visually, purple-blue gradient, 4k",
+      "challenges": [
+        "Features traditionally requiring native apps \u2014 camera for scanning, GPS for service location, push notifications",
+        "Ensuring consistent offline and online experience \u2014 users in areas with unstable connectivity",
+        "Performance on entry-level Android devices with limited hardware resources",
+        "Cross-browser compatibility for PWA features that weren\u2019t yet standard across all browsers",
+        "Bundle size \u2014 keeping the app lightweight for fast initial load even on 3G"
+      ],
+      "solutions": [
+        "Implemented offline-first strategy with Service Workers and Cache API, prioritizing critical assets and main navigation data",
+        "Used Cache API and IndexedDB for local data storage, with background sync when connection was restored",
+        "Built UI with responsive design system that adapted to any screen size, from smartphone to desktop",
+        "Optimized bundle with code splitting, lazy loading, and Brotli compression \u2014 initial app under 50KB",
+        "Used Workbox for robust service worker management, with intelligent caching strategies per resource type"
+      ],
+      "tradeoffs": [
+        {
+          "title": "PWA vs. Hybrid App (Cordova/React Native)",
+          "body": "PWA offered installation without app store and instant updates; we gave up some deeper native APIs (bluetooth, NFC) that weren\u2019t needed for the scope"
+        },
+        {
+          "title": "Offline-first vs. Always online",
+          "body": "We prioritized offline experience for browsing and querying, but server-dependent operations (scheduling, payment) clearly displayed \u201cconnection required\u201d status"
+        },
+        {
+          "title": "Performance vs. Features",
+          "body": "Some complex visual features were simplified to ensure performance on low-end devices"
+        }
+      ],
+      "results": [
+        "40% of users installed the PWA on their home screen (vs. 15% average for native apps)",
+        "App size under 50KB on first load (vs. 5-50MB for equivalent native apps)",
+        "35% lower bounce rate compared to the traditional mobile site version",
+        "Push notifications with 3x more engagement than email marketing",
+        "95% smartphone coverage without needing app store distribution"
+      ],
+      "period": "June 2018 - February 2019",
+      "duration": "9 months"
+    }
+  ]
+}
