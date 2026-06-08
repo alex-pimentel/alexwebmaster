@@ -7,7 +7,6 @@
 [![Security Audit](https://img.shields.io/github/actions/workflow/status/alex-pimentel/alexwebmaster/audit.yml?branch=main&label=Security&color=red)](https://github.com/alex-pimentel/alexwebmaster/actions/workflows/audit.yml)
 [![CodeQL](https://img.shields.io/github/actions/workflow/status/alex-pimentel/alexwebmaster/codeql.yml?branch=main&label=CodeQL&color=8A2BE2)](https://github.com/alex-pimentel/alexwebmaster/actions/workflows/codeql.yml)
 [![Build](https://img.shields.io/github/actions/workflow/status/alex-pimentel/alexwebmaster/build.yml?branch=main&label=Build&color=informational)](https://github.com/alex-pimentel/alexwebmaster/actions/workflows/build.yml)
-[![Format](https://img.shields.io/github/actions/workflow/status/alex-pimentel/alexwebmaster/format.yml?branch=main&label=Format&color=FF69B4)](https://github.com/alex-pimentel/alexwebmaster/actions/workflows/format.yml)
 
 Senior Full Stack Engineer & Solutions Architect.
 
@@ -20,7 +19,7 @@ This repository contains the source code of my professional portfolio — a stat
 - **Language:** TypeScript (strict mode)
 - **Animations:** Framer Motion
 - **Testing:** Vitest (unit) + Playwright (E2E)
-- **Infrastructure:** GitHub Pages static hosting
+- **Infrastructure:** Cloudflare Pages static hosting
 
 ## Structure
 
@@ -45,7 +44,7 @@ npm run dev
 
 ## Quality gates
 
-Every push and pull request runs **8 independent checks**:
+Every push and pull request runs **7 independent checks**:
 
 | Check | Description |
 |-------|-------------|
@@ -56,7 +55,6 @@ Every push and pull request runs **8 independent checks**:
 | Security Audit | npm audit (fail on high/critical) |
 | CodeQL | GitHub security + quality queries |
 | Build | Next.js static export validation |
-| Format | Prettier code style enforcement |
 
 ## License
 
