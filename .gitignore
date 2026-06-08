@@ -31,3 +31,9 @@ yarn-error.log*
 
 # Generated images (optional — uncomment if you want to ignore generated covers)
 # projects/*/cover.png
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
