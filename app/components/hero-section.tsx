@@ -50,7 +50,7 @@ export function HeroSection() {
             className="text-5xl md:text-7xl font-extrabold tracking-tight mb-2 bg-gradient-to-r from-foreground via-foreground to-primary/70 bg-clip-text text-transparent"
             variants={badgeItem}
           >
-            Alex Gomes <span className="text-primary">Pimentel</span>
+            Alex Gomes Pimentel
           </motion.h1>
 
           <motion.h2
