@@ -17,7 +17,7 @@ export default defineConfig({
     { name: "mobile", use: { ...devices["iPhone 13"] } },
   ],
   webServer: {
-    command: "npm run dev",
+    command: "rm -rf public/projects && cp -r projects public/projects && npm run dev",
     url: "http://localhost:3000",
     reuseExistingServer: !process.env.CI,
   },
