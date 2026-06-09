@@ -20,6 +20,8 @@ Thumbs.db
 
 # Build output
 dist/
+.next/
+.opennext/
 
 # Test artifacts
 test-results/
@@ -28,6 +30,7 @@ scripts/
 
 # Generated build assets
 public/projects/
+app/lib/data.generated.ts
 
 # TypeScript
 *.tsbuildinfo

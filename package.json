@@ -3,8 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "rm -rf public/projects && cp -r projects public/projects && next build",
-    "dev": "next dev",
+    "generate": "tsx scripts/generate-data.ts",
+    "dev": "npm run generate && next dev",
+    "build": "rm -rf public/projects && cp -r projects public/projects && npm run generate && next build",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "analyze": "ANALYZE=true next build",
     "test": "vitest run",
@@ -12,9 +13,7 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "lint": "eslint app/",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
   },
   "nextBundleAnalysis": {
     "open": true
@@ -48,6 +47,7 @@
     "eslint-config-next": "^16.2.7",
     "jsdom": "^29.1.1",
     "tailwindcss": "^4.3.0",
+    "tsx": "^4.22.4",
     "typescript": "^5.9.3",
     "vitest": "^4.1.8",
     "wrangler": "^4.98.0"
