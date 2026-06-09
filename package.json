@@ -3,15 +3,18 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
     "build": "rm -rf public/projects && cp -r projects public/projects && next build",
-    "preview": "npx serve dist",
+    "dev": "next dev",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "analyze": "ANALYZE=true next build",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "lint": "eslint app/"
+    "lint": "eslint app/",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "nextBundleAnalysis": {
     "open": true
@@ -19,6 +22,7 @@
   "dependencies": {
     "@base-ui/react": "^1.5.0",
     "@fontsource/inter": "^5.2.8",
+    "@opennextjs/cloudflare": "^1.19.11",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.40.0",
@@ -45,6 +49,7 @@
     "jsdom": "^29.1.1",
     "tailwindcss": "^4.3.0",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.8"
+    "vitest": "^4.1.8",
+    "wrangler": "^4.98.0"
   }
 }

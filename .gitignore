@@ -44,3 +44,13 @@ playwright-report/
 
 # Generated images (optional — uncomment if you want to ignore generated covers)
 # projects/*/cover.png
+
+# OpenNext
+.open-next
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+
+!.env.example

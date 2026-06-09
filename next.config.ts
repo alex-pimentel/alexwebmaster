@@ -12,3 +12,5 @@ const nextConfig: NextConfig = {
 export default process.env.ANALYZE === "true"
   ? withBundleAnalyzer({ enabled: true })(nextConfig)
   : nextConfig;
+
+import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());
