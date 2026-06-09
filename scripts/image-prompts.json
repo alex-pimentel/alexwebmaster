@@ -1,0 +1,6 @@
+[
+  {
+    "output": "eletromidia/cicd-automation-standardization.png",
+    "prompt": "Modern CI/CD pipeline visualization, GitHub Actions workflow diagram with automated stages for unit tests, end-to-end tests, static analysis, dependency checking, Trivy security scanning, Docker image scanning, vulnerability scanning, Terraform deployment to GCP, clean DevOps infrastructure dashboard, blue-green deployment scheme, glowing connections between stages, futuristic datacenter background, 4k"
+  }
+]
