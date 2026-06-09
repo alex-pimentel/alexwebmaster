@@ -6,14 +6,14 @@
     "generate": "tsx scripts/generate-data.ts",
     "dev": "npm run generate && next dev",
     "build": "rm -rf public/projects && cp -r projects public/projects && npm run generate && opennextjs-cloudflare build",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "preview": "rm -rf public/projects && cp -r projects public/projects && npm run generate && opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "analyze": "ANALYZE=true next build",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "lint": "eslint app/",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+    "deploy": "rm -rf public/projects && cp -r projects public/projects && npm run generate && opennextjs-cloudflare build && opennextjs-cloudflare deploy"
   },
   "nextBundleAnalysis": {
     "open": true
