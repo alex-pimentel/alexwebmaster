@@ -4,7 +4,7 @@
 [![TypeCheck](https://img.shields.io/github/actions/workflow/status/alex-pimentel/alexwebmaster/typecheck.yml?branch=main&label=TypeCheck&color=3178C6)](https://github.com/alex-pimentel/alexwebmaster/actions/workflows/typecheck.yml)
 [![Unit Tests](https://img.shields.io/github/actions/workflow/status/alex-pimentel/alexwebmaster/test-unit.yml?branch=main&label=Unit%20Tests&color=6DB33F)](https://github.com/alex-pimentel/alexwebmaster/actions/workflows/test-unit.yml)
 [![E2E Tests](https://img.shields.io/github/actions/workflow/status/alex-pimentel/alexwebmaster/test-e2e.yml?branch=main&label=E2E%20Tests&color=45BA4B)](https://github.com/alex-pimentel/alexwebmaster/actions/workflows/test-e2e.yml)
-[![Security Audit](https://img.shields.io/github/actions/workflow/status/alex-pimentel/alexwebmaster/audit.yml?branch=main&label=Security&color=red)](https://github.com/alex-pimentel/alexwebmaster/actions/workflows/audit.yml)
+[![Security Audit](https://img.shields.io/github/actions/workflow/status/alex-pimentel/alexwebmaster/audit.yml?branch=main&label=Security&color=success)](https://github.com/alex-pimentel/alexwebmaster/actions/workflows/audit.yml)
 [![CodeQL](https://img.shields.io/github/actions/workflow/status/alex-pimentel/alexwebmaster/codeql.yml?branch=main&label=CodeQL&color=8A2BE2)](https://github.com/alex-pimentel/alexwebmaster/actions/workflows/codeql.yml)
 [![Build](https://img.shields.io/github/actions/workflow/status/alex-pimentel/alexwebmaster/build.yml?branch=main&label=Build&color=informational)](https://github.com/alex-pimentel/alexwebmaster/actions/workflows/build.yml)
 
