@@ -29,7 +29,6 @@ coverage/
 
 # Generated build assets
 public/projects/
-app/lib/data.generated.ts
 
 # TypeScript
 *.tsbuildinfo
