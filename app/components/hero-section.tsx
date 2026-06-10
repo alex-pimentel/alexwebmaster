@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Mail, ExternalLink, MapPin } from "lucide-react";
+import { GitHubIcon } from "@/components/ui/icons";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -84,26 +86,39 @@ export function HeroSection() {
             variants={stagger}
           >
             <motion.span
-              className="px-4 py-2 rounded-full bg-secondary/50 border border-border/50 text-secondary-foreground font-medium"
+              className="px-4 py-2 rounded-full bg-secondary/50 border border-border/50 text-secondary-foreground font-medium inline-flex items-center gap-1.5"
               variants={badgeItem}
             >
-              🇧🇷 Araruama, Brazil
+              <MapPin className="w-4 h-4" />
+              Araruama, Brazil
             </motion.span>
             <motion.a
               href="mailto:contato@alexwebmaster.com.br"
-              className="px-4 py-2 rounded-full bg-secondary/50 border border-border/50 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer font-medium hover:shadow-lg hover:scale-105"
+              className="px-4 py-2 rounded-full bg-secondary/50 border border-border/50 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer font-medium hover:shadow-lg hover:scale-105 inline-flex items-center gap-1.5"
               variants={badgeItem}
             >
-              ✉️ contato@alexwebmaster.com.br
+              <Mail className="w-4 h-4" />
+              contato@alexwebmaster.com.br
             </motion.a>
             <motion.a
               href="https://linkedin.com/in/alex-webmaster"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 rounded-full bg-secondary/50 border border-border/50 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer font-medium hover:shadow-lg hover:scale-105"
+              className="px-4 py-2 rounded-full bg-secondary/50 border border-border/50 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer font-medium hover:shadow-lg hover:scale-105 inline-flex items-center gap-1.5"
               variants={badgeItem}
             >
-              🔗 LinkedIn
+              <ExternalLink className="w-4 h-4" />
+              LinkedIn
+            </motion.a>
+            <motion.a
+              href="https://github.com/alex-pimentel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-full bg-secondary/50 border border-border/50 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer font-medium hover:shadow-lg hover:scale-105 inline-flex items-center gap-1.5"
+              variants={badgeItem}
+            >
+              <GitHubIcon className="w-4 h-4" />
+              GitHub
             </motion.a>
           </motion.div>
         </motion.div>

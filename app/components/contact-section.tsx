@@ -1,4 +1,6 @@
+import { Mail, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { GitHubIcon } from "@/components/ui/icons";
 
 export function ContactSection() {
   return (
@@ -14,17 +16,28 @@ export function ContactSection() {
         <div className="flex flex-col sm:flex-row justify-center gap-5">
           <a
             href="mailto:contato@alexwebmaster.com.br"
-            className="inline-flex items-center justify-center rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 py-3 hover:shadow-xl hover:-translate-y-0.5 transition-all"
+            className="inline-flex items-center justify-center rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 py-3 hover:shadow-xl hover:-translate-y-0.5 transition-all gap-2"
           >
+            <Mail />
             Send Email
           </a>
           <Button
             variant="outline"
             render={<a href="https://linkedin.com/in/alex-webmaster" target="_blank" rel="noopener noreferrer" />}
             nativeButton={false}
+            className="h-12 px-8 hover:shadow-xl hover:-translate-y-0.5 gap-2"
+          >
+            <ExternalLink />
+            Connect on LinkedIn
+          </Button>
+          <Button
+            variant="outline"
+            render={<a href="https://github.com/alex-pimentel" target="_blank" rel="noopener noreferrer" />}
+            nativeButton={false}
             className="h-12 px-8 hover:shadow-xl hover:-translate-y-0.5"
           >
-            Connect on LinkedIn
+            <GitHubIcon />
+            Follow on GitHub
           </Button>
         </div>
       </div>
